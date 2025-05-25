@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+
+    @font-face {
+        font-family: 'lorna';
+        src: url('lorna.otf');
+    }
+
+#container{
+    height: 500px;
+    border: 1px solid black;
+    width: 500px;
+    background-color:  rgb(54, 51, 51);
+     display: flex;
+     flex-direction: row;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-left: 30%;
+   
+    
+}
+
+.form{   
+        margin-top: -161px;
+ display: flex;
+     flex-direction: row;
+     gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+h1{
+    margin-top: 80px;
+    color: white;
+    font-style: oblique;
+    margin-bottom: 60PX;
+    
+}
+.btn{
+
+width: 180px; background-color: rgb(60, 141, 60); color: white;
+border-radius: 10px;
+margin-top: -20px;
+border: none;
+padding: 10px;
+font-family: lorna;
+font-size: 20px;
+cursor: pointer;
+transition: 0.3s;
+
+
+}
+input{
+background-color:  rgb(54, 51, 51);
+border-top: none;
+border-left: none;
+margin-bottom: 20px;
+
+border-right: none;
+
+}
+
+input:focus{
+    outline: none;
+}
+ </style>
+    <title>Document</title>
+</head>
+<body>
+ 
+    
+<div id="container">
+
+ <h1 style="font-family: lorna;" >Register</h1>
+<div class="form" style="width: 300px; margin-left: 30%;" >
+   
+    <form action="">
+         <div >
+
+                <input type="text" placeholder="UserName"style="color: #e3dede;">
+                <input type="text" placeholder="Password" style="color: #e3dede;">
+                <input type="text" placeholder="E-mail Address"style="color: #e3dede;">
+               <br>  <input type="radio" style="color: #e3dede;">Accept rule and conditions
+
+         </div>
+       
+        
+         
+           
+           <br> <button class="btn" >Register</button>
+           <p style="color: #e3dede;">Already have Account ?</p>
+    </form>
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

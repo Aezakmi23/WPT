@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+
+<style>
+
+#container{
+
+ 
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+      background-image: linear-gradient(to bottom right,rgb(7, 82, 144), rgb(134, 204, 231));
+    margin-top: 50px;
+}
+
+.border{
+
+     width: 400px;
+     
+}
+
+ h2,h5{ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-self: center;  
+    color: azure;  
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+ #main-box{
+            height:fit-content;
+    }
+
+.cards-box{
+   
+    height: 350px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 1px;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+       /* background-color: antiquewhite;   */
+}
+.cards{
+   
+    background-color: azure;
+    color: black;
+    height: 300px;
+    width: 200px;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+   
+  
+
+}
+h5{
+    font-size: x-small;
+}
+
+strong{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(19, 29, 33);
+}
+.mark{
+    text-decoration: line-through;
+    color: red;
+}
+.btn{
+   background-image: linear-gradient(to bottom right ,rgb(42, 174, 222), rgb(68, 146, 215));
+    color: white;
+    width: 100px;
+    height: 20px;
+    border: none;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;        
+    transition: 0.3s;
+
+
+}
+p{
+    font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+
+   <center>
+    <div id="container">
+
+      <div class="border" id="main-box">
+
+                <DIV class="border">
+                    <center><h2> Bootstrap pricing table </h2></center>
+                </DIV>
+                <DIV class="border">
+                    <center><h5> Easily create a classy table in Bootstrap4. <br>
+                        Bootstrap snippet by Bootstrapious </h5></center>
+                </DIV>
+
+      </div>
+
+
+        <div class="cards-box"> 
+
+                <div class="cards">
+                    <div class="title">
+                        <div>
+                         <center><h6>BASIC</h6>
+                        <p><strong>$199</strong>/month</p>
+                        </center>
+                        </div>
+                        <p >✅  pranay is kumar</p>
+                        <p >✅  pranay is kumar</p>
+                        <p class="mark">❌ pranay is Baghel</p> 
+                        <p class="mark">❌ pranay is Baghel</p> 
+                        <p class="mark">❌ pranay is Baghel</p> 
+                        <input type="button" class="btn" value="Subscribe" style="border-radius: 10%;">
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="title">
+                        <h6>PRO</h6>
+                        <p><strong>$399</strong>/month</p>
+                        <p >✅  pranay is kumar</p>
+                        <p >✅  pranay is kumar</p>
+                        <p >✅  pranay is kumar</p>
+                        <p class="mark">❌ pranay is bhagel</p>
+                        <p class="mark">❌ pranay is bhagel</p>
+                        <input type="button" class="btn" value="Subscribe" style="border-radius: 10%;">
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="title">
+                        <h6>ENTERPRISE</h6>
+                        <p><strong>$899</strong>/month</p>
+                        <p >✅  pranay is kumar</p>
+                        <p >✅  pranay is kumar</p>
+                        <p >✅  pranay is kumar</p>
+                        <p >✅  pranay is kumar</p>
+                        <p class="mark">❌  pranay is Baghel</p>
+                        <input type="button" class="btn" value="Subscribe "style="border-radius: 10% ;">
+                    </div>
+                </div>
+
+
+        </div>
+
+    </div>
+
+</center>
+    
+</body>
+</html>
