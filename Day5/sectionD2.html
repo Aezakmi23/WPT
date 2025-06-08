@@ -1,0 +1,27 @@
+
+<!-- num="1,2,3,4,5,6,7,8,9"
+Note:Use num string in below questions:
+2.Fetch "2" and "8" from string and perfrom numerical muliplication -->
+
+<html lang="en">
+<head>
+   <title>Document</title>
+   <script>
+        var num="1,2,3,4,5,6,7,8,9";
+        console.log(num.length)
+        var str= num.split(",");
+        var mul=1;
+        for(var i=0;i<str.length;i++){
+           if(str[i] == "2" || str[i] == "8"){
+                mul=str[i]*mul;
+           }
+        }
+        console.log(mul);
+        document.writeln(mul);
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

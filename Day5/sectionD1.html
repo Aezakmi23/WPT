@@ -1,0 +1,34 @@
+<!-- num="1,2,3,4,5,6,7,8,9"
+Note:Use num string in below questions:
+1.Fetch "1" and "5" from string and perform numerical addition -->
+
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var num ="1,2,3,4,5,6,7,8,9"
+        var arr = num.split(",");
+        var t1;
+        var t2;
+        for(i=0;i<arr.length;i++){
+            if(arr[i] == "1"){
+                t1 = i;
+            } 
+            if(arr[i] == "5"){
+                t2 = i;
+            }                       
+        }
+              
+        var result = Number(arr[t1]) + Number(arr[t2]);
+        document.write(result)
+        console.log(result)
+
+            
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

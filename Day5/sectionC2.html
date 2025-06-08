@@ -1,0 +1,35 @@
+<!-- Write a code to accept name of fruits name from user and show in list -->
+
+
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        
+         var fruits=[];
+
+         function fruitInput(){
+            var n = Number(prompt("enter number of fruits to be added"))
+            for(i=0 ; i<n ; i++){
+                var fruitName = prompt("enter" + (i+1) + "fruit")
+                fruits.push(fruitName)
+            }
+         }  
+         function display(){
+            var str = "<ol>"
+                for(i=0; i<fruits.length ;i++){
+                    str +=`<li> ${fruits[i]} </li>`
+                }
+         
+                str += "</ol>"
+                document.write(str)
+            }
+            fruitInput()
+            display()
+           
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

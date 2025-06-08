@@ -1,0 +1,40 @@
+<!-- Create a web page and take 3 Movies details from prompt and show in table
+Movies property : Movie Name,Price,Seat -->
+
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var Movies = []
+        function Movie_input(){
+            for(i=0;i<3;i++){
+            var Movie={};
+            Movie.name = prompt("Enter Movie name")
+            Movie.price = prompt("Enter Movie price")
+            Movie.seat = prompt("Enter Movie seat")
+            Movies.push(Movie)
+            }
+        }
+       
+        function Display(){
+            var str="<table border =1 ><tr><th>Movie Name</th><th>Price</th><th>Seat</th></tr>"
+                for(i=0;i<Movies.length;i++){
+                    str+=`<tr>
+                        <td>${Movies[i].name}</td>
+                        <td>${Movies[i].price}</td>
+                        <td>${Movies[i].seat}</td>
+                        </tr>`
+                }
+            str+= "</table>"
+            document.write(str)
+
+        }
+        Movie_input()
+        Display()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
