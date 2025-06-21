@@ -1,0 +1,54 @@
+<!--1. Implementing Inheritance with Prototypes
+Task:
+->Write a constructor function named Person that accepts two parameters: name and age.
+->Add a method greet on Person.prototype that returns "Hello, I'm <name>!".
+->Write another constructor function called Student that inherits from Person and 
+accepts an additional parameter subject.
+->Add a method study on Student.prototype that returns "<name> is studying <subject>.".
+->Ensure that Student inherits the greet method from Person using prototype inheritance.
+Note : Implement this without using ES6 class syntax. Consider how you’ll link the 
+prototype chain and ensure the constructor property is correctly set.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        
+        function Person(name, age){
+            this.name = name;
+            this.age = age;
+        }
+
+         Person.prototype.greet = function(){
+                console.log("Hello, I'm " + this.name  + "!");
+        }
+        function Student(name, age, subject){
+            this.subject = subject;
+            Person.call(this, name, age);
+        }
+        Student.prototype = Object.create(Person.prototype)
+        Student.prototype.constructor = Student;
+
+        Student.prototype.study = function(){
+                console.log(this.name, " is studying ", this.subject);
+        }
+         
+        
+        var p1 = new Person("Yash", 25);
+       
+        //p1.greet
+       
+        //Student.prototype = Person
+        var s1 = new Student("Yash", 25, "WPT")
+
+        
+        //console.log(s1.study)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
